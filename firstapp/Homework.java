@@ -17,5 +17,6 @@ public class Homework {
         double hypotenuse = Math.sqrt(hypotenuse2);
         double s = (float)1/2 * cateta * cateta;
         System.out.println( s + " area of a right triangle " + hypotenuse + " Hypotenuse ");
+        System.out.println(cateta + " 1st catet " + catetb + " 2nd catet ");
     }
 }
