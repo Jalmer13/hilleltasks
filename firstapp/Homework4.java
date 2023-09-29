@@ -112,6 +112,7 @@ public class Homework4 {
         }
 
         System.out.println("Task 5 Middle symbols");
+        //ver1
         String str1 = "Hometask";
         if (str1.length() == 4) {
             System.out.println("Middle symbols of " + str1 + " are " + str1.substring(1,3));
@@ -122,6 +123,15 @@ public class Homework4 {
         } else {
             System.out.println("not coded");
         }
+        //ver2
+        String str2 = "Hillel";
+        int length = str2.length();
+        int lResult1 = length / 2 - 1;
+        int lResult2 = length / 2;
+        char valueFst = str2.charAt(lResult1);
+        char valueSnd = str2.charAt(lResult2);
+        System.out.println("Middle symbols of " + str2 + " are " + valueFst + valueSnd);
+
 
     }
 }
