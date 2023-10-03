@@ -3,12 +3,12 @@ package firstapp;
 public class Homework4 {
     public static void main(String[] args) {
         System.out.println("Task 1 CheckOddEven");
-        int fstnum = 12;
-        int sndnum = 4;
-        double result = fstnum % sndnum;
+        int fstNumber = 12;
+        int sndNumber = 4;
+        double result = fstNumber % sndNumber;
         if (result != 0) {
             System.out.println("Odd number");
-        } else if (result == 0) {
+        } else {
             System.out.println("Even number");
         }
         System.out.println("BYE");
@@ -41,7 +41,7 @@ public class Homework4 {
             System.out.println("NOV");
         } else if (month == 12) {
             System.out.println("DEC");
-        } else if (month > 12 && month < 1 ) {
+        } else {
             System.out.println("Not a valid month");
         }
 
@@ -89,35 +89,49 @@ public class Homework4 {
         }
 
         System.out.println("Task 3 Absolute value");
-        int trdnum = 3;
-        int fthnum = -9;
-        int abs1 = Math.abs(trdnum);
-        int abs2 = Math.abs(fthnum);
+        int trdNumber = 3;
+        int fthNumber = -9;
+        int abs1 = Math.abs(trdNumber);
+        int abs2 = Math.abs(fthNumber);
         if (abs1 > abs2) {
-            System.out.println(trdnum + " has a greater absolute value than " + fthnum);
+            System.out.println(trdNumber + " has a greater absolute value than " + fthNumber);
         } else if (abs1 < abs2) {
-            System.out.println(fthnum + " has a greater absolute value than " + trdnum);
-        } else if (abs1 == abs2) {
-            System.out.println(trdnum + " has equal absolute value as " + fthnum);
+            System.out.println(fthNumber + " has a greater absolute value than " + trdNumber);
+        } else {
+            System.out.println(trdNumber + " has equal absolute value as " + fthNumber);
         }
 
         System.out.println("Task 4 Isosceles triangle");
         int sideA = 5;
         int sideB = 5;
-        if (sideA == sideB) {
+        int sideC = 8;
+        if (sideA == sideB || sideA == sideC || sideB == sideC) {
             System.out.println("Triangle is isosceles");
-        } else if (sideA != sideB) {
+        } else {
             System.out.println("Triangle is not isosceles");
         }
 
         System.out.println("Task 5 Middle symbols");
-        String str1 = "Hillel";
-        String str2 = "Java";
-        String str3 = "Hometask";
+        //ver1
+        String str1 = "Hometask";
+        if (str1.length() == 4) {
+            System.out.println("Middle symbols of " + str1 + " are " + str1.substring(1,3));
+        } else if (str1.length() == 6) {
+            System.out.println("Middle symbols of " + str1 + " are " + str1.substring(2,4));
+        } else if (str1.length() == 8) {
+            System.out.println("Middle symbols of " + str1 + " are " + str1.substring(3,5));
+        } else {
+            System.out.println("not coded");
+        }
+        //ver2
+        String str2 = "Hillel";
+        int length = str2.length();
+        int lResult1 = length / 2 - 1;
+        int lResult2 = length / 2;
+        char valueFst = str2.charAt(lResult1);
+        char valueSnd = str2.charAt(lResult2);
+        System.out.println("Middle symbols of " + str2 + " are " + valueFst + valueSnd);
 
-        System.out.println("Middle symbols of " + str1 + " is " + str1.substring(2,4));
-        System.out.println("Middle symbols of " + str2 + " is " + str2.substring(1,3));
-        System.out.println("Middle symbols of " + str3 + " is " + str3.substring(3,5));
 
     }
 }
