@@ -5,7 +5,7 @@ public class task2 {
     }
 
     public static void main(String[] args) {
-        int[] arraySnd = new int[]{32, -2, 5, 99, 22};
+        int[] arraySnd = {32, -2, 5, 99, 22};
         int min = arraySnd[0];
 
         int max;
